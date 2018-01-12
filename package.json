@@ -1,0 +1,17 @@
+{
+  "name": "tell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/command-line-args": "^4.0.2",
+    "@types/node": "^9.3.0",
+    "command-line-args": "^4.0.7"
+  }
+}
