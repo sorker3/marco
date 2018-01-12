@@ -1,7 +1,0 @@
-#! /bin/bash
-name=$1
-echo "Transpiling ..."
-tsc ${name}.ts
-echo ""
-node ${name}.js
-rm ${name}.js
