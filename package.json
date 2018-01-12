@@ -1,10 +1,14 @@
 {
-  "name": "tell",
+  "name": "marco",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "marco",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local": "node marco.ts -l Marco .... POLO!",
+    "server": "node marco.ts -s 23",
+    "client": "node marco.ts -c localhost 23",
+    "compile": "tsc --outFile marco marco.ts",
+    "build": ""
   },
   "keywords": [],
   "author": "",
