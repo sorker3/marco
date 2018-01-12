@@ -6,4 +6,4 @@ const argDef = [
 
 const Parser = args(argDef);
 
-console.log(Parser.msg);
+console.log(Parser.msg.join(' '));
