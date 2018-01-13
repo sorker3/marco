@@ -1,9 +1,9 @@
-const args = require('command-line-args');
+const clargs = require('commander');
 
-const argDef = [
-    {name: 'msg', type:String, multiple: true, defaultOption: true}
-];
 
-const Parser = args(argDef);
+clargs 
+    .version('0.0.4')
+    .parse(process.argv);
 
-console.log(Parser.msg.join(' '));
+
+console.log(clargs.args.join(' '));
