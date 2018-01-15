@@ -2,7 +2,7 @@
   "name": "marco",
   "version": "1.0.0",
   "description": "",
-  "main": "marco",
+  "main": "src/marco.ts",
   "scripts": {
     "local": "node marco.ts -l Marco .... POLO!",
     "server": "node marco.ts -s 23",
