@@ -4,8 +4,8 @@ const clargs = require('commander');
 //Handle arguments
 clargs 
     .version('0.0.4')
-    .option('-c, --client <n>', 'Run as client', parseInt)
+    .option('-s, --server <n>', 'Run as server', parseInt)
     .parse(process.argv);
 
-if (clargs.client) console.log('Running as client at ' + clargs.integer);
+if (clargs.server) console.log('Running as client at ' + clargs.parseInt);
 if (clargs.args) console.log(clargs.args.join(' '));
