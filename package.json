@@ -16,6 +16,7 @@
   "dependencies": {
     "@types/command-line-args": "^4.0.2",
     "@types/node": "^9.4.0",
-    "subcommander": "^1.0.0"
+    "subcommander": "^1.0.0",
+    "ts-node": "^4.1.0"
   }
 }

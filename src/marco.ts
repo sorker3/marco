@@ -1,24 +1,26 @@
 const clargs = require('subcommander');
 
 
-var srv = clargs.command('server', {
+clargs.command('server', {
     desc: 'Starts a marco server',
-    callback: function(options) {
-            var port = options.port;
-            var hostname = options.hostname;
-
-            console.log(port, hostname);
+    callback: function ( options ) {
+        var port = options.port,
+            hostname = options.hostname;
+ 
+        console.log( port, hostname );
     }
     })
-    .option('port', {
-        abbr: 'p',
-        desc: 'Server port',
-        default: 8080
-    })
-    .option('hostname', {
-        abbr: 'H',
-        desc: 'Server hostname'
-    });
+        .option('port', {
+            abbr: 'p',
+            desc: 'Server port',
+            default: 8080
+        })
+        .option('hostname', {
+            abbr: 'H',
+            desc: 'Server hostname',
+            default: 'localhost'
+        })
+    .end();
 
 clargs.parse();
 
