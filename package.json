@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/command-line-args": "^4.0.2",
-    "@types/node": "^9.3.0",
-    "commander": "^2.13.0"
+    "@types/node": "^9.4.0",
+    "subcommander": "^1.0.0"
   }
 }
