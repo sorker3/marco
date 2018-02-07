@@ -5,8 +5,8 @@ clargs
     .command('server', {
         desc: 'Starts a marco server',
         callback: function (options) {
-            let port:number = options.port,
-                host:string = options.hostname;
+            let port = options.port,
+                host = options.hostname;
         
             console.log(port, host);
         }
@@ -25,9 +25,9 @@ clargs
     .command('client', {
         desc: 'Use as a client',
         callback: function (options) {
-            let port:number = options.port,
-                host:string = options.hostname,
-                msg:string = options.message;
+            let port = options.port,
+                host = options.hostname,
+                msg = options.message;
         
             console.log(port, host, msg);
         }
@@ -48,6 +48,5 @@ clargs
                 default: 'Marco... Polo!'
             })
         .end();
-clargs.parse();
 
-console.log(clargs.parse());
+clargs.parse();
